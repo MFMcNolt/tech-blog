@@ -39,7 +39,15 @@ app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
 app.use(express.static(path.join(__dirname, 'public')));
 
-app.use(routes);
+app.use(router);
+ router.get('/', async (req, res) => {
+     try {
+         res.render('homepage');
+     } catch (err) {
+         res.status(500).json(err);
+     }
+ });
+
 
 sequelize.sync({ force: false }).then(() => {
   app.listen(PORT, () => console.log('Now listening'));
