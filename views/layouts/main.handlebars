@@ -4,39 +4,61 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>My Cool Tech Blog!</title>
-  <link rel="stylesheet" href="/public/css/jass.css">
-  <link rel="stylesheet" href="/public/css/style.css">
+  <title>Your Tech Blog</title>
+  <link rel="stylesheet" href="/css/jass.css">
+  <link rel="stylesheet" href="/css/style.css">
 </head>
 
-<body>
-  <div class="flex-column justify-space-around">
-    <header class="display-flex justify-space-between align-center p-2">
-      <h1>
-        <a href="/">My Cool Tech Blog!</a>
-      </h1>
-      <nav>
-        <!-- Conditionally render login or logout links -->
-        {{#if logged_in}}
-        <a href="/public/js/profile.js">profile</a> |
-        <button class="no-button" id="logout">logout</button>
-        {{else}}
-        <a href="/public/js/login.js">login</a>
-        {{/if}}
-      </nav>
-    </header>
-    <main class="container container-fluid mt-5">
-      <!-- Render the sub layout -->
-      {{{ body }}}
-    </main>
-    <footer>
-      
-    </footer>
-  </div>
+<body style="background-color: #aaf0d1">
+  <header style ="background-color: #1f1912" class="page-header flex items-center bg-green-900 text-6xl w-full py-8 text-left">
+    <a href="/" class="flex-grow flex items-center m-2">
+      <span class="heading text-white">Tech Blog</span>
+    </a>
 
-  <!-- Render script for logged in users only -->
+   
+
+    <div class="text-D5DBC9">
+        {{#if logged_in}}
+            <a href="/profile" class="mr-4">Home Dashboard</a>
+            <button class="no-button" id="logout">Logout</button>
+        {{else}}
+            <a href="/login">Login</a>
+        {{/if}}
+  </header>
+
+
+
+
+
+
+  <main class="">
+    
+    {{{ body }}}
+  </main>
+
+  <footer>
+
+  </footer>
+
+
   {{#if logged_in}}
-  <script src="/public/js/logout.js"></script>
+    <script type="text/javascript" src="/js/logout.js"></script>
+  {{/if}}
+
+  <style>
+    
+    header {
+      font-family: 'Libre Baskerville', serif !important;
+    }
+  </style>
+  
+</body>
+
+   
+
+
+  {{#if logged_in}}
+  <script src="/js/logout.js"></script>
   {{/if}}
 </body>
 

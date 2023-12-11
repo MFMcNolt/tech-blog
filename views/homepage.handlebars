@@ -1,17 +1,29 @@
-<!-- Loop over each object in the blogs array -->
-{{#each blogs as |blog| }}
-<div class="row mb-4 blog">
-  <div class="col-md-5">
-    <h2>
-      <a href="/blog/>{{blog.id}}">{{blog.name}}</a>
-    </h2>
-    <p>Created by {{blog.user.name}} on {{format_date blog.date_created}}</p>
-  </div>
-  <div class="col-md-7">
-    <p>
-      {{blog.description}}
-    </p>
-  </div>
-</div>
-{{/each}}
+{{#if postData2}}
 
+    <ul>
+        <div class="w-3/4 mx-auto">
+            <div class="space-y-4">
+                {{#each postData2}}
+                    <div class="border border-gray-300 p-4 mb-4">
+                        
+                        <div class="flex justify-between items-center mb-2">
+                        <div class="text-gray-600">
+                            {{title}}
+                        </div>
+                        <div class="text-gray-600">
+                            <span>{{user.username}}</span> | <span>{{date}}</span>
+                        </div>
+                        </div>
+
+                        
+                        <div>
+                        {{review}}
+                        </div>
+                    </div>
+                {{/each}}
+            </div>
+        </div>
+    </ul>
+
+{{/if}}
+    <script src="/js/script.js"></script>
