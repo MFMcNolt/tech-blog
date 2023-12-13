@@ -14,11 +14,11 @@ Comment.init(
         autoIncrement: true,
       },
       user_username: {
-        type: DataTypes.STRING,
+        type: DataTypes.STRING, // Corrected to match User's id type
         allowNull: false,
         references: {
-          model: User,
-          key: 'username',
+            model: User,
+            key: 'username',
         },
       },
       post_id: {

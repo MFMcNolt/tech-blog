@@ -25,8 +25,8 @@ const sess = {
   resave: false,
   saveUninitialized: true,
   store: new SequelizeStore({
-    db: sequelize
-  })
+    db: sequelize,
+  }),
 };
 
 app.use(session(sess));
@@ -39,17 +39,20 @@ app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
 app.use(express.static(path.join(__dirname, 'public')));
 
-app.use(router);
- router.get('/', async (req, res) => {
-     try {
-         res.render('homepage');
-     } catch (err) {
-         res.status(500).json(err);
-     }
- });
+// Define the router after app.use(express.static(...))
+const router = express.Router();
 
+router.get('/', async (req, res) => {
+  try {
+    res.render('homepage');
+  } catch (err) {
+    res.status(500).json(err);
+  }
+});
+
+// Use the router
+app.use(router);
 
 sequelize.sync({ force: false }).then(() => {
   app.listen(PORT, () => console.log('Now listening'));
 });
-
