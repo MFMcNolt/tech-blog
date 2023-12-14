@@ -6,12 +6,12 @@ The Tech Blog CMS is a content management system that allows developers to publi
 The motivation behind this project is to provide developers with a platform to share their thoughts, experiences, and expertise in the ever-evolving field of technology. By building a CMS-style blog site, developers can publish articles, interact with a community of like-minded individuals, and stay updated on the latest trends in the tech industry.
 
 ## Table of Contents
-Installation
-Features
-Tech Used
-Usage
-Contributing
-License
+- [Installation](Installation)
+- [Features](Features)
+- [Tech Used](Technologies Used)
+- [Usage](Usage)
+- [Contributing](Contributing)
+- [License](License)
 
 ## Installation
 Clone the Repository: git clone [repository_url]
