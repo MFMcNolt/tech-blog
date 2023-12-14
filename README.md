@@ -15,7 +15,7 @@ Ideally, I was hoping to create a content management system that allows develope
 - [License](License)
 
 ## Installation
-Clone the Repository: git clone [repository_url]
+Clone the Repository: git clone https://github.com/MFMcNolt/tech-blog
 Install Dependencies:  npm install
 Database Setup:
 Create a MySQL database.
