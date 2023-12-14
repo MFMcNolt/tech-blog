@@ -14,10 +14,10 @@ Comment.init(
         autoIncrement: true,
       },
       user_username: {
-        type: DataTypes.STRING, // Corrected to match User's id type
+        type: DataTypes.STRING,
         allowNull: false,
         references: {
-            model: User,
+            model: 'user',
             key: 'username',
         },
       },
@@ -33,8 +33,7 @@ Comment.init(
         type: DataTypes.STRING,
         allowNull: false,
       },
-    
-    
+     
 },
     {
       sequelize,

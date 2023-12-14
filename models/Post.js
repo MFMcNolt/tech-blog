@@ -17,11 +17,11 @@ Post.init(
       allowNull: false,
     },
     user_username: {
-      type: DataTypes.STRING,  // Corrected to match User's username type
+      type: DataTypes.STRING,  
       allowNull: false,
       references: {
-        model: User,
-        key: 'username',  // Changed from 'id' to 'username'
+        model: 'user',
+        key: 'username',
       },
     },
     blog: {
