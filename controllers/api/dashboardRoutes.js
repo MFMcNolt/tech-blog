@@ -1,14 +1,13 @@
 const router = require('express').Router();
-const { Post, User } = require('../models');
-const withAuth = require('../utils/auth');
+const withAuth = require('../../utils/auth');
+const { User, Post } = require('../../models'); 
 
-// Define routes related to the dashboard
 
 router.get('/', withAuth, async (req, res) => {
   try {
     const userData = await User.findByPk(req.session.user_id, {
       attributes: { exclude: ['password'] },
-      include: [{ model: Post }],
+      include: [{ model: 'user' }],
     });
 
     const user = userData.get({ plain: true });

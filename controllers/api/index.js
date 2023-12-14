@@ -4,6 +4,6 @@ const postRoutes = require('./postRoutes');
 const dashboardRoutes = require('./dashboardRoutes'); 
 
 router.use('/user', userRoutes);
-router.use('/post', this.postRoutes);
+router.use('/post', postRoutes);
 
 module.exports = router;
