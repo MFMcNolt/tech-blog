@@ -15,12 +15,12 @@ Ideally, I was hoping to create a content management system that allows develope
 - [License](License)
 
 ## Installation
-Clone the Repository: git clone https://github.com/MFMcNolt/tech-blog
-Install Dependencies:  npm install
-Database Setup:
-Create a MySQL database.
-Update the .env file with your database credentials.
-Run the database schema using: npm run seed
+- Clone the Repository: git clone https://github.com/MFMcNolt/tech-blog
+- Install Dependencies:  npm install
+- Database Setup:
+- Create a MySQL database.
+- Update the .env file with your database credentials.
+- Run the database schema using: npm run seed
 
 ## Features
 User Authentication:
@@ -46,9 +46,9 @@ Express-session:
 The express-session npm package is utilized for secure user authentication and session management.
 
 ## Usage
-Start the Application: npm start
-Access the Tech Blog: Open your web browser and navigate to http://localhost:3001.
-Sign Up and Enjoy: Create a new account, publish blog posts, and engage with the community through comments.
+- Start the Application: npm start
+- Access the Tech Blog: Open your web browser and navigate to http://localhost:3001.
+- Sign Up and Enjoy: Create a new account, publish blog posts, and engage with the community through comments.
 
 ## Contributing
 Contributions are welcome! Please follow the Contributor Covenant Code of Conduct.
