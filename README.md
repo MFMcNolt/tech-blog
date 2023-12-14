@@ -1,9 +1,10 @@
 # Tech Blog
 
 ## Description
-The Tech Blog CMS is a content management system that allows developers to publish blog posts, read articles from other developers, and engage in discussions through comments. This application follows the Model-View-Controller (MVC) architectural pattern and utilizes technologies such as Handlebars.js, Sequelize ORM, and the express-session npm package for authentication.
 
-The motivation behind this project is to provide developers with a platform to share their thoughts, experiences, and expertise in the ever-evolving field of technology. By building a CMS-style blog site, developers can publish articles, interact with a community of like-minded individuals, and stay updated on the latest trends in the tech industry.
+Unforuntely for me, this challenge really challenge me and I was unsuccessful with rendering on Localhost which then stopped me from being able to deploy to Heroku. This was so challenging for me as I could not debug my system no matter what. I realize how useful the console.log usage is and I regret not using it in this challenge. I also learnt that I need to learn a better execution model. Throughout this course, I have found 'where to begin' with these challenges one of the hardest lessons!
+
+Ideally, I was hoping to create a content management system that allows developers to publish blog posts, read articles from other developers, and engage in discussions through comments. This application follows the Model-View-Controller (MVC) architectural pattern and utilizes technologies such as Handlebars.js, Sequelize ORM, and the express-session npm package for authentication.
 
 ## Table of Contents
 - [Installation](Installation)
